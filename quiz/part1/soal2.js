@@ -1,7 +1,11 @@
 //pada soal yg kedua, kalian harus belajar method `splice`, `slice`, `join`, 'split', dan lainnya
 
 let input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca"];
-let bulan = ""
+let tanggalArray = input[3].split("/");
+let formatdate = [tanggalArray[2], tanggalArray[0], tanggalArray[1]]
+    let formatdate1 = `${tanggalArray[0]}-${tanggalArray[1]}-${tanggalArray[2]}`
+    let limitedName = input[1].substring(0, 15);
+
 ;
 function dataHandling(input) {
 
@@ -10,26 +14,19 @@ function dataHandling(input) {
     input.splice(4, 1, "Pria", "SMA International Metro");
     console.log(input)
 
-    let namabulan= ""
-        switch (bulan) {
-            case 1: namabulan = "Mei";
-                
-                break;
-            default: namabulan = "Mei";
-        }
-        console.log(namabulan)
-
-    let tanggalArray = input[3].split("/");
-    let formatdate = [tanggalArray[2], tanggalArray[0], tanggalArray[1]]
-    let formatdate1 = `${tanggalArray[0]}-${tanggalArray[1]}-${tanggalArray[2]}`
-    let limitedName = input[1].substring(0, 15);
-    
-    console.log(formatdate)
-    console.log(formatdate1)
-    console.log(limitedName)
-
 }
 dataHandling(input);
+
+    if (tanggalArray[1] == "05" ){
+
+        console.log("Mei")
+    }
+
+
+console.log(formatdate)
+console.log(formatdate1)
+console.log(limitedName)
+
 
 /**
  * keluaran yang diharapkan (pada console)
