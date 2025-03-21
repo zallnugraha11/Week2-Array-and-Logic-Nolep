@@ -3,10 +3,11 @@
 let input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca"];
 let tanggalArray = input[3].split("/");
 let formatdate = [tanggalArray[2], tanggalArray[0], tanggalArray[1]]
-    let formatdate1 = `${tanggalArray[0]}-${tanggalArray[1]}-${tanggalArray[2]}`
+  
+let formatdate1 = `${tanggalArray[0]}-${tanggalArray[1]}-${tanggalArray[2]}`
     let limitedName = input[1].substring(0, 15);
 
-;
+    
 function dataHandling(input) {
 
     input.splice(1, 1, "Roman Alamsyah Elsharawy"), 
